@@ -1,6 +1,6 @@
 # Architektur
 
-Die Architektur ist bewusst pragmatisch: Ein externes Python-Werkzeug liest Emby-Daten, berechnet pro Benutzer eine Rotation, schreibt verwaltete Playlists und aktualisiert VirtualTV-Kanaele.
+Ein externes Python-Werkzeug liest Emby-Daten, berechnet pro Benutzer eine Rotation, schreibt verwaltete Playlists und aktualisiert VirtualTV-Kanaele.
 
 ## Komponenten
 

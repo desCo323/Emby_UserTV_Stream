@@ -15,7 +15,7 @@ This page describes the most important configuration sections. Example values mu
 | Field | Example | Effect |
 | --- | --- | --- |
 | `playlist_prefix` | `fav-` | creates `fav-USERNAME` |
-| `channel_name_template` | `00 Fins Crew TV - {username} Channel` | creates the visible VirtualTV channel name |
+| `channel_name_template` | `UserTV - {username} Channel` | creates the visible VirtualTV channel name |
 | `include_item_types` | `["Movie", "Series"]` | favorite item types to process |
 
 ## Scheduler

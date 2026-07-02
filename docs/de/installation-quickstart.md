@@ -42,7 +42,7 @@ Wichtige Felder:
   "api_key": "PASTE_EMBY_API_KEY_HERE",
   "admin_user_id": "PASTE_ADMIN_USER_ID_HERE",
   "playlist_prefix": "fav-",
-  "channel_name_template": "00 Fins Crew TV - {username} Channel"
+  "channel_name_template": "UserTV - {username} Channel"
 }
 ```
 
@@ -101,7 +101,7 @@ Das Tool klont daraus die verwalteten User-Kanaele und ersetzt die Platzhalter d
 Nach einem erfolgreichen Lauf sollten diese Artefakte sichtbar sein:
 
 - `fav-USERNAME` Playlists unter `/var/lib/emby/data/userplaylists/`;
-- VirtualTV-Kanaele wie `00 Fins Crew TV - USERNAME Channel`;
+- VirtualTV-Kanaele wie `UserTV - VIEWER Channel`;
 - aktualisierte State-Datei unter `/var/lib/emby-favtv-sync/state.json`;
 - Timer-Status mit naechstem Lauf:
 

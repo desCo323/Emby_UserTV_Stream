@@ -14,7 +14,7 @@ Emby UserTV Stream is experimental documentation and an operations blueprint for
 
 Large media libraries are useful, but sometimes users simply want to turn something on and immediately get content that fits their taste. Emby UserTV Stream connects personal user signals with a TV-like lean-back experience:
 
-- **One live channel per user:** channels such as `admin Channel`, `alina Channel` and `Fin Channel` are generated from individual data.
+- **One live channel per user:** channels such as `viewer-a Channel`, `viewer-b Channel` and `viewer-c Channel` are generated from individual data.
 - **Favorites become rotation seeds:** favorite movies and shows are transformed into managed playlists.
 - **Shows can continue naturally:** recently watched shows can be detected as hot series and scheduled from the next useful episode.
 - **24/7 programming:** the scheduler builds a multi-hour program window and refreshes it regularly.
@@ -35,9 +35,7 @@ Large media libraries are useful, but sometimes users simply want to turn someth
 - [Operations](docs/en/operations.md)
 - [German installation and quickstart](docs/de/installation-quickstart.md)
 
-## Background articles
-
-The landing page is intentionally compact and benefit-oriented. Detailed explanations live in the background articles:
+## In-depth Articles
 
 1. [Problem and product idea](docs/en/articles/01-problem-and-product-idea.md)
 2. [Data sources and user signals](docs/en/articles/02-data-sources-and-user-signals.md)
@@ -46,7 +44,7 @@ The landing page is intentionally compact and benefit-oriented. Detailed explana
 5. [Safety model and boundaries](docs/en/articles/05-safety-model.md)
 6. [Operations model with systemd timer](docs/en/articles/06-operations-model.md)
 
-German background articles:
+German articles:
 
 1. [Problem und Produktidee](docs/de/articles/01-problem-und-produktidee.md)
 2. [Datenquellen und Benutzer-Signale](docs/de/articles/02-datenquellen-und-benutzersignale.md)
@@ -74,8 +72,8 @@ flowchart LR
 
 | Area | Example | Purpose |
 | --- | --- | --- |
-| Playlist | `fav-admin`, `fav-alina`, `fav-Fin` | Sorted, managed source list per user |
-| VirtualTV channel | `00 Fins Crew TV - alina Channel` | Live TV entry point per user |
+| Playlist | `fav-viewer-a`, `fav-viewer-b`, `fav-viewer-c` | Sorted, managed source list per user |
+| VirtualTV channel | `UserTV - viewer-b Channel` | Live TV entry point per user |
 | State file | `/var/lib/emby-favtv-sync/state.json` | Stores schedules, IDs and previous runs |
 | Options file | `/var/lib/emby-favtv-sync/options.json` | Stores per-user channel options |
 | systemd timer | `emby-favtv-sync.timer` | Refreshes generated channels regularly |

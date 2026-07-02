@@ -15,7 +15,7 @@ Diese Seite beschreibt die wichtigsten Konfigurationsbereiche. Beispielwerte mue
 | Feld | Beispiel | Wirkung |
 | --- | --- | --- |
 | `playlist_prefix` | `fav-` | erzeugt `fav-USERNAME` |
-| `channel_name_template` | `00 Fins Crew TV - {username} Channel` | erzeugt den sichtbaren VirtualTV-Kanalnamen |
+| `channel_name_template` | `UserTV - {username} Channel` | erzeugt den sichtbaren VirtualTV-Kanalnamen |
 | `include_item_types` | `["Movie", "Series"]` | Favoriten-Typen, die ausgewertet werden |
 
 ## Scheduler

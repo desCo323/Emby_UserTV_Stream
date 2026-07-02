@@ -11,19 +11,19 @@
   <g transform="translate(42,220)">
     <rect width="250" height="150" rx="8" fill="#1f2937" stroke="#38bdf8" stroke-width="2"/>
     <rect x="0" y="0" width="250" height="92" rx="8" fill="#0ea5e9"/>
-    <text x="20" y="122" font-family="Arial, sans-serif" font-size="22" fill="#fff">admin Channel</text>
+    <text x="20" y="122" font-family="Arial, sans-serif" font-size="22" fill="#fff">viewer-a Channel</text>
     <text x="20" y="145" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">favorites + hot series</text>
   </g>
   <g transform="translate(322,220)">
     <rect width="250" height="150" rx="8" fill="#1f2937" stroke="#a78bfa" stroke-width="2"/>
     <rect x="0" y="0" width="250" height="92" rx="8" fill="#7c3aed"/>
-    <text x="20" y="122" font-family="Arial, sans-serif" font-size="22" fill="#fff">alina Channel</text>
+    <text x="20" y="122" font-family="Arial, sans-serif" font-size="22" fill="#fff">viewer-b Channel</text>
     <text x="20" y="145" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">personal rotation</text>
   </g>
   <g transform="translate(602,220)">
     <rect width="250" height="150" rx="8" fill="#1f2937" stroke="#22c55e" stroke-width="2"/>
     <rect x="0" y="0" width="250" height="92" rx="8" fill="#16a34a"/>
-    <text x="20" y="122" font-family="Arial, sans-serif" font-size="22" fill="#fff">Fin Channel</text>
+    <text x="20" y="122" font-family="Arial, sans-serif" font-size="22" fill="#fff">viewer-c Channel</text>
     <text x="20" y="145" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">scheduled playlist</text>
   </g>
   <g transform="translate(42,455)">

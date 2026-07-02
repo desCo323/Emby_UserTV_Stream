@@ -29,13 +29,13 @@ VirtualTV channels contain many settings. Instead of rebuilding those settings c
 A generated channel may be named:
 
 ```text
-00 Fins Crew TV - alina Channel
+UserTV - viewer-b Channel
 ```
 
 It refers to a playlist such as:
 
 ```text
-fav-alina
+fav-viewer-b
 ```
 
 ## Safety idea

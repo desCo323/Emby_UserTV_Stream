@@ -42,7 +42,7 @@ Important fields:
   "api_key": "PASTE_EMBY_API_KEY_HERE",
   "admin_user_id": "PASTE_ADMIN_USER_ID_HERE",
   "playlist_prefix": "fav-",
-  "channel_name_template": "00 Fins Crew TV - {username} Channel"
+  "channel_name_template": "UserTV - {username} Channel"
 }
 ```
 
@@ -101,7 +101,7 @@ The tool clones that template for managed user channels and replaces the placeho
 After a successful run, these artifacts should exist:
 
 - `fav-USERNAME` playlists under `/var/lib/emby/data/userplaylists/`;
-- VirtualTV channels such as `00 Fins Crew TV - USERNAME Channel`;
+- VirtualTV channels such as `UserTV - VIEWER Channel`;
 - updated state file under `/var/lib/emby-favtv-sync/state.json`;
 - timer status with next run:
 

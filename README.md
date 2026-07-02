@@ -14,7 +14,7 @@ Emby UserTV Stream ist eine experimentelle Dokumentation und Betriebsvorlage fue
 
 Viele Mediatheken sind gross, aber der Alltag ist simpel: Man moechte einschalten und sofort etwas sehen, das zum eigenen Geschmack passt. Emby UserTV Stream verbindet die persoenlichen Signale eines Benutzers mit einer TV-artigen Lean-back-Erfahrung:
 
-- **Pro Benutzer ein eigener Live-Kanal:** `admin Channel`, `alina Channel`, `Fin Channel` und weitere Kanaele entstehen aus individuellen Daten.
+- **Pro Benutzer ein eigener Live-Kanal:** `viewer-a Channel`, `viewer-b Channel`, `viewer-c Channel` und weitere Kanaele entstehen aus individuellen Daten.
 - **Favoriten werden zur Rotation:** Filme und Serien-Favoriten werden in eine verwaltete Playlist ueberfuehrt.
 - **Serien werden fortgesetzt:** Zuletzt geschaute Serien koennen als "hot series" erkannt und ab der passenden Folge weitergespielt werden.
 - **24/7-Planung:** Der Scheduler baut ein mehrstuendiges Programmfenster und erneuert es regelmaessig.
@@ -38,9 +38,7 @@ Viele Mediatheken sind gross, aber der Alltag ist simpel: Man moechte einschalte
 - [Betrieb und Wartung DE](docs/de/operations.md)
 - [Operations EN](docs/en/operations.md)
 
-## Fachartikel im Hintergrund
-
-Die Startseite ist bewusst werblicher und kompakter. Die technischen Details liegen in den Fachartikeln:
+## Vertiefende Fachartikel
 
 1. [Problem und Produktidee](docs/de/articles/01-problem-und-produktidee.md)
 2. [Datenquellen und Benutzer-Signale](docs/de/articles/02-datenquellen-und-benutzersignale.md)
@@ -49,7 +47,7 @@ Die Startseite ist bewusst werblicher und kompakter. Die technischen Details lie
 5. [Sicherheitsmodell und Grenzen](docs/de/articles/05-sicherheitsmodell.md)
 6. [Betriebsmodell mit systemd-Timer](docs/de/articles/06-betriebsmodell.md)
 
-English background articles:
+English articles:
 
 1. [Problem and product idea](docs/en/articles/01-problem-and-product-idea.md)
 2. [Data sources and user signals](docs/en/articles/02-data-sources-and-user-signals.md)
@@ -70,15 +68,15 @@ flowchart LR
     D --> E
     E --> F[verwaltete fav-USERNAME Playlist]
     F --> G[VirtualTV Benutzerkanal]
-    G --> H[Emby Live TV / Startseite]
+    G --> H[Emby Live TV / Home]
 ```
 
 ## Was erzeugt wird
 
 | Bereich | Beispiel | Zweck |
 | --- | --- | --- |
-| Playlist | `fav-admin`, `fav-alina`, `fav-Fin` | Sortierte, verwaltete Quellen pro User |
-| VirtualTV-Kanal | `00 Fins Crew TV - alina Channel` | Live-TV-Einstiegspunkt pro User |
+| Playlist | `fav-viewer-a`, `fav-viewer-b`, `fav-viewer-c` | Sortierte, verwaltete Quellen pro User |
+| VirtualTV-Kanal | `UserTV - viewer-b Channel` | Live-TV-Einstiegspunkt pro User |
 | State-Datei | `/var/lib/emby-favtv-sync/state.json` | Merkt Zeitplan, IDs und letzte Laeufe |
 | Options-Datei | `/var/lib/emby-favtv-sync/options.json` | Speichert User-spezifische Kanaloptionen |
 | systemd-Timer | `emby-favtv-sync.timer` | Aktualisiert die Kanaele regelmaessig |

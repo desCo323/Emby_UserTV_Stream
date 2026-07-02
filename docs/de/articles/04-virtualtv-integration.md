@@ -29,13 +29,13 @@ VirtualTV-Kanaele enthalten viele Einstellungen. Statt diese Einstellungen im Co
 Ein erzeugter Kanal kann zum Beispiel heissen:
 
 ```text
-00 Fins Crew TV - alina Channel
+UserTV - viewer-b Channel
 ```
 
 Er verweist auf eine Playlist wie:
 
 ```text
-fav-alina
+fav-viewer-b
 ```
 
 ## Sicherheitsgedanke
