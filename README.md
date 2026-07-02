@@ -29,6 +29,7 @@ Viele Mediatheken sind gross, aber der Alltag ist simpel: Man moechte einschalte
 
 ## Startpunkte
 
+- [Standalone-Plugin bauen und testen](docs/de/plugin-standalone.md)
 - [Installation und Quickstart auf Deutsch](docs/de/installation-quickstart.md)
 - [Installation and quickstart in English](docs/en/installation-quickstart.md)
 - [Funktionsuebersicht DE](docs/de/features.md)
@@ -37,6 +38,10 @@ Viele Mediatheken sind gross, aber der Alltag ist simpel: Man moechte einschalte
 - [Architecture EN](docs/en/architecture.md)
 - [Betrieb und Wartung DE](docs/de/operations.md)
 - [Operations EN](docs/en/operations.md)
+
+## Standalone-Plugin
+
+Das Repository enthaelt nun eine installierbare Emby-Plugin-Basis unter `src/Emby.UserTV.Plugin`. Sie ersetzt die serverlokalen Cronjobs noch nicht vollstaendig, bringt aber bereits Plugin-Ladepunkt, Admin-Seite, Konfiguration, Favoriten-Scan und Dry-Run-Planung in eine eigenstaendige Emby-DLL.
 
 ## Vertiefende Fachartikel
 

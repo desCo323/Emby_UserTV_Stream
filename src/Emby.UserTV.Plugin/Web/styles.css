@@ -1,0 +1,51 @@
+.usertv-page .content-primary {
+  max-width: 980px;
+}
+
+.user-tv-muted {
+  opacity: .78;
+  max-width: 760px;
+}
+
+.user-tv-panel {
+  margin: 1.5em 0;
+  padding: 1.25em;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 8px;
+}
+
+.user-tv-status {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) 1fr;
+  gap: .5em 1em;
+}
+
+.user-tv-status dt {
+  opacity: .7;
+}
+
+.user-tv-status dd {
+  margin: 0;
+}
+
+.user-tv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1em;
+}
+
+.user-tv-output {
+  overflow: auto;
+  min-height: 12rem;
+  max-height: 28rem;
+  padding: 1rem;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, .28);
+}
+
+@media (max-width: 640px) {
+  .user-tv-grid,
+  .user-tv-status {
+    grid-template-columns: 1fr;
+  }
+}

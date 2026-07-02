@@ -13,6 +13,9 @@ options.json
 *.lock
 *.log
 backups/
+artifacts/
+bin/
+obj/
 
 # Python/local tooling
 __pycache__/

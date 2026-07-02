@@ -29,11 +29,16 @@ Large media libraries are useful, but sometimes users simply want to turn someth
 
 ## Start here
 
+- [Build and test the standalone plugin](docs/en/plugin-standalone.md)
 - [Installation and quickstart](docs/en/installation-quickstart.md)
 - [Feature overview](docs/en/features.md)
 - [Architecture](docs/en/architecture.md)
 - [Operations](docs/en/operations.md)
 - [German installation and quickstart](docs/de/installation-quickstart.md)
+
+## Standalone Plugin
+
+The repository now contains an installable Emby plugin foundation in `src/Emby.UserTV.Plugin`. It does not fully replace the server-local cron jobs yet, but it already provides a plugin entry point, admin page, configuration, favorite scanning, and dry-run planning in a standalone Emby DLL.
 
 ## In-depth Articles
 

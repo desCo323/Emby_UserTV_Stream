@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UserTV Stream</title>
+  <link rel="stylesheet" href="__plugin/usertvcss">
+</head>
+<body>
+  <div
+    id="userTvPluginPage"
+    data-role="page"
+    class="page type-interior pluginConfigurationPage usertv-page"
+    data-require="emby-button,emby-input,emby-checkbox"
+    data-controller="__plugin/usertvjs"
+  >
+    <div data-role="content">
+      <div class="content-primary">
+        <h1>UserTV Stream</h1>
+        <p class="user-tv-muted">Standalone plugin foundation for per-user stream planning from Emby favorites.</p>
+
+        <section class="user-tv-panel">
+          <h2>Status</h2>
+          <dl class="user-tv-status">
+            <dt>Runtime</dt>
+            <dd id="userTvRuntime">Loading</dd>
+            <dt>Mode</dt>
+            <dd id="userTvMode">Loading</dd>
+            <dt>Last run</dt>
+            <dd id="userTvLastRun">No run yet</dd>
+          </dl>
+          <button is="emby-button" type="button" class="raised button-submit" id="userTvRunDry">
+            <span>Run dry plan</span>
+          </button>
+        </section>
+
+        <form id="userTvConfigurationForm" class="user-tv-panel">
+          <h2>Configuration</h2>
+          <label class="checkboxContainer">
+            <input is="emby-checkbox" type="checkbox" id="enableAutomaticPlanning">
+            <span>Enable automatic planning</span>
+          </label>
+          <div class="inputContainer">
+            <label class="inputLabel" for="planningIntervalMinutes">Planning interval in minutes</label>
+            <input is="emby-input" type="number" min="15" max="10080" id="planningIntervalMinutes">
+          </div>
+          <label class="checkboxContainer">
+            <input is="emby-checkbox" type="checkbox" id="enableExperimentalWrites">
+            <span>Enable experimental write gate</span>
+          </label>
+          <div class="inputContainer">
+            <label class="inputLabel" for="playlistPrefix">Playlist prefix</label>
+            <input is="emby-input" type="text" id="playlistPrefix">
+          </div>
+          <div class="inputContainer">
+            <label class="inputLabel" for="channelNameTemplate">Channel name template</label>
+            <input is="emby-input" type="text" id="channelNameTemplate">
+          </div>
+          <div class="user-tv-grid">
+            <div class="inputContainer">
+              <label class="inputLabel" for="minimumItemsPerUser">Minimum items</label>
+              <input is="emby-input" type="number" min="1" id="minimumItemsPerUser">
+            </div>
+            <div class="inputContainer">
+              <label class="inputLabel" for="maximumItemsPerUser">Maximum items</label>
+              <input is="emby-input" type="number" min="1" id="maximumItemsPerUser">
+            </div>
+          </div>
+          <label class="checkboxContainer">
+            <input is="emby-checkbox" type="checkbox" id="includeSeriesEpisodes">
+            <span>Include series episodes in later write adapters</span>
+          </label>
+          <label class="checkboxContainer">
+            <input is="emby-checkbox" type="checkbox" id="anonymizeDashboardExamples">
+            <span>Use anonymized examples in dashboard output</span>
+          </label>
+          <button is="emby-button" type="submit" class="raised button-submit">
+            <span>Save</span>
+          </button>
+        </form>
+
+        <section class="user-tv-panel">
+          <h2>Plan output</h2>
+          <pre id="userTvOutput" class="user-tv-output">No dry-run output yet.</pre>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
