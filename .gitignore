@@ -1,0 +1,27 @@
+# Secrets and local runtime state
+.env
+*.env
+config.json
+*.secret
+*.token
+*.key
+
+# Emby/UserTV runtime artifacts
+state.json
+options.json
+*.bak
+*.lock
+*.log
+backups/
+
+# Python/local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

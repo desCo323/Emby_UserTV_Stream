@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Conceptual UserTV channel detail</title>
+  <desc id="desc">A conceptual screenshot-style diagram showing a personal channel schedule with program blocks.</desc>
+  <rect width="1200" height="720" fill="#0b1220"/>
+  <rect x="42" y="44" width="1116" height="120" rx="8" fill="#172033"/>
+  <text x="72" y="95" font-family="Arial, sans-serif" font-size="36" fill="#fff">00 Fins Crew TV - alina Channel</text>
+  <text x="72" y="132" font-family="Arial, sans-serif" font-size="18" fill="#cbd5e1">Generated from favorites, recent shows and manual user options</text>
+  <g transform="translate(72,230)">
+    <rect width="1020" height="76" rx="6" fill="#1e293b"/>
+    <rect width="190" height="76" rx="6" fill="#2563eb"/>
+    <text x="24" y="46" font-family="Arial, sans-serif" font-size="20" fill="#fff">Now</text>
+    <text x="220" y="46" font-family="Arial, sans-serif" font-size="22" fill="#fff">Dr. House S02E13 - Kratzer im Lack</text>
+    <text x="820" y="46" font-family="Arial, sans-serif" font-size="16" fill="#93c5fd">reason: favorite</text>
+  </g>
+  <g transform="translate(72,330)">
+    <rect width="1020" height="76" rx="6" fill="#111827"/>
+    <rect width="190" height="76" rx="6" fill="#059669"/>
+    <text x="24" y="46" font-family="Arial, sans-serif" font-size="20" fill="#fff">Next</text>
+    <text x="220" y="46" font-family="Arial, sans-serif" font-size="22" fill="#fff">S.W.A.T. S06E18 - Die fuenf Sinne</text>
+    <text x="820" y="46" font-family="Arial, sans-serif" font-size="16" fill="#86efac">reason: hot</text>
+  </g>
+  <g transform="translate(72,430)">
+    <rect width="1020" height="76" rx="6" fill="#111827"/>
+    <rect width="190" height="76" rx="6" fill="#9333ea"/>
+    <text x="24" y="46" font-family="Arial, sans-serif" font-size="20" fill="#fff">Later</text>
+    <text x="220" y="46" font-family="Arial, sans-serif" font-size="22" fill="#fff">Supernatural S03E10 - Traeum' von mir</text>
+    <text x="820" y="46" font-family="Arial, sans-serif" font-size="16" fill="#d8b4fe">reason: similar</text>
+  </g>
+  <g transform="translate(72,560)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" fill="#fff">Behind the scenes</text>
+    <text x="0" y="36" font-family="Arial, sans-serif" font-size="17" fill="#cbd5e1">Emby favorites -> scheduler -> fav-alina playlist -> VirtualTV channel -> Live TV playback</text>
+  </g>
+  <text x="42" y="690" font-family="Arial, sans-serif" font-size="14" fill="#64748b">Conceptual mockup, not a real Emby screenshot.</text>
+</svg>
