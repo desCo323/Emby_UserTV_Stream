@@ -32,6 +32,16 @@ The output is written to `artifacts/plugin`. For a manual test, copy `Emby.UserT
 
 The test script verifies plugin resources, planner behavior, and dry-run behavior with fictive users and fictive media. The current test report is in [standalone-test-report.md](standalone-test-report.md).
 
+## Isolated Emby Test
+
+On hosts that already run a production Emby instance, the test instance can be started in isolation:
+
+```bash
+./scripts/start-isolated-emby-test.sh
+```
+
+The script uses separate Linux namespaces, separate test program data, and the default test port `18096`. It does not write into production Emby program data.
+
 ## First Plugin Version Scope
 
 - Emby plugin entry point with its own plugin ID.

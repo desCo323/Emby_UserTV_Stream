@@ -16,6 +16,7 @@ backups/
 artifacts/
 bin/
 obj/
+usertv-test-emby/
 
 # Python/local tooling
 __pycache__/

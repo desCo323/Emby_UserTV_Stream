@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Emby.UserTV.Plugin.Configuration;
 using Emby.UserTV.Plugin.Domain;
@@ -15,6 +16,23 @@ Run("embedded web resources", () =>
     AssertContains(resources, "Emby.UserTV.Plugin.Web.index.js");
     AssertContains(resources, "Emby.UserTV.Plugin.Web.styles.css");
     return $"{resources.Length} resources found";
+});
+
+Run("configuration page links", () =>
+{
+    var assembly = typeof(Emby.UserTV.Plugin.Plugin).Assembly;
+    using var stream = assembly.GetManifestResourceStream("Emby.UserTV.Plugin.Web.index.html");
+    if (stream == null)
+    {
+        throw new InvalidOperationException("Missing embedded index.html.");
+    }
+
+    using var reader = new StreamReader(stream);
+    var html = reader.ReadToEnd();
+    AssertTrue(html.Contains("configurationpage?name=usertvjs", StringComparison.Ordinal), "JS controller URL is not using the Emby configurationpage route.");
+    AssertTrue(html.Contains("configurationpage?name=usertvcss", StringComparison.Ordinal), "CSS URL is not using the Emby configurationpage route.");
+    AssertTrue(!html.Contains("__plugin/usertv", StringComparison.Ordinal), "Legacy __plugin route should not be used for UserTV resources.");
+    return "configurationpage resource route";
 });
 
 Run("planner with fictive users and media", () =>

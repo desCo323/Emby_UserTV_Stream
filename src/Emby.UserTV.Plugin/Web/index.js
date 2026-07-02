@@ -14,7 +14,8 @@
       type: 'POST',
       url: ApiClient.getUrl(path),
       data: JSON.stringify(body || {}),
-      contentType: 'application/json'
+      contentType: 'application/json',
+      dataType: 'json'
     });
   }
 

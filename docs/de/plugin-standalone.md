@@ -32,6 +32,16 @@ Das Ergebnis liegt in `artifacts/plugin`. Fuer einen manuellen Test wird die Dat
 
 Das Testskript prueft die Plugin-Ressourcen, die Planerlogik und den Dry-Run mit fiktiven Benutzern und fiktiven Medien. Das aktuelle Testprotokoll steht in [testprotokoll-standalone.md](testprotokoll-standalone.md).
 
+## Isolierter Emby-Test
+
+Auf Hosts mit bereits laufendem produktivem Emby kann die Testinstanz isoliert gestartet werden:
+
+```bash
+./scripts/start-isolated-emby-test.sh
+```
+
+Das Skript nutzt eigene Linux-Namespaces, eigene Test-Programmdaten und den Standard-Testport `18096`. Es schreibt nicht in produktive Emby-Programmdaten.
+
 ## Funktionsumfang der ersten Plugin-Version
 
 - Emby-Plugin-Ladepunkt mit eigener Plugin-ID.
