@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>Emby.UserTV.Plugin.SmokeTests</AssemblyName>
+    <RootNamespace>Emby.UserTV.Plugin.SmokeTests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Emby.UserTV.Plugin\Emby.UserTV.Plugin.csproj" />
+    <PackageReference Include="MediaBrowser.Server.Core" Version="4.8.10" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

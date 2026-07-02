@@ -24,6 +24,14 @@ UserTV Stream ist ab dieser Projektstufe nicht mehr nur als serverlokale Skript-
 
 Das Ergebnis liegt in `artifacts/plugin`. Fuer einen manuellen Test wird die Datei `Emby.UserTV.Plugin.dll` in das Emby-Plugin-Verzeichnis kopiert. Danach muss Emby neu gestartet werden.
 
+## Smoke-Test
+
+```bash
+./scripts/test.sh
+```
+
+Das Testskript prueft die Plugin-Ressourcen, die Planerlogik und den Dry-Run mit fiktiven Benutzern und fiktiven Medien. Das aktuelle Testprotokoll steht in [testprotokoll-standalone.md](testprotokoll-standalone.md).
+
 ## Funktionsumfang der ersten Plugin-Version
 
 - Emby-Plugin-Ladepunkt mit eigener Plugin-ID.

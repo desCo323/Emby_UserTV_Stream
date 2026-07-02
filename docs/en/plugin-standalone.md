@@ -24,6 +24,14 @@ UserTV Stream is no longer limited to a server-local script setup. The repositor
 
 The output is written to `artifacts/plugin`. For a manual test, copy `Emby.UserTV.Plugin.dll` into the Emby plugin directory and restart Emby.
 
+## Smoke Test
+
+```bash
+./scripts/test.sh
+```
+
+The test script verifies plugin resources, planner behavior, and dry-run behavior with fictive users and fictive media. The current test report is in [standalone-test-report.md](standalone-test-report.md).
+
 ## First Plugin Version Scope
 
 - Emby plugin entry point with its own plugin ID.
